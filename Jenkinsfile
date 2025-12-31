@@ -3,6 +3,7 @@
 def configMap = [
     project: "roboshop",
     component: "frontend"
+    appType  : "nginx"
 ]
 
 // if branch is not equal to main, then run CI pipeline
