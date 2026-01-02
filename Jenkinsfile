@@ -1,10 +1,10 @@
 @Library('jenkins-shared-library') _
 
-def configMap = {
+def configMap = [
     project: "roboshop",
-    component: "frontend"
+    component: "frontend",
     appType  : "nginx"
-}
+]
 
 // if branch is not equal to main, then run CI pipeline
 if ( ! env.BRANCH_NAME.equalsIgnoreCase('main') ){
